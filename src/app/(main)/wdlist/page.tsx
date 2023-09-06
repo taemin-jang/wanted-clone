@@ -1,22 +1,19 @@
-import ExpandCircleDownOutlinedIcon from '@mui/icons-material/ExpandCircleDownOutlined';
+import JobList from '@/app/(main)/wdlist/joblist';
+import JobFilter from '@/app/(main)/wdlist/jobfilter';
+import ActiveRecruiting from '@/app/(main)/wdlist/active-recruiting';
+import BookMark from '@/app/(main)/wdlist/bookmark';
 
 export default function WdList() {
 	return (
-		<div className='max-w-wanted mt-10 m-auto'>
-			<div className='flex items-center'>
-				<div>
-					<span className='text-2xl font-bold mr-4'>개발</span>
-					<span>
-						<ExpandCircleDownOutlinedIcon fontSize='large' />
-					</span>
-				</div>
-				<div className=' before:content-["|"] before:px-4 before:text-gray-300 before:text-2xl'>
-					<span className='text-2xl mr-4'>개발 전체</span>
-					<span>
-						<ExpandCircleDownOutlinedIcon fontSize='large' />
-					</span>
-				</div>
-			</div>
-		</div>
+		<>
+			<JobFilter />
+			<section className='max-w-wanted mt-10 m-auto'>
+				<BookMark />
+				<ActiveRecruiting />
+			</section>
+			<section className='max-w-wanted mt-10 m-auto'>
+				<JobList />
+			</section>
+		</>
 	);
 }
