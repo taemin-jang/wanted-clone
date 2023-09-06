@@ -14,6 +14,10 @@ const nextConfig = {
 				protocol: 'https',
 				hostname: 'image.wanted.co.kr',
 			},
+			{
+				protocol: 'https',
+				hostname: 'i.dummyjson.com',
+			},
 		],
 	},
 	swcMinify: true,
