@@ -1,24 +1,9 @@
 'use client';
-import { Data, onClick } from '@/types/job-filter';
+import Keyword from '@/components/keyword';
+import { Data } from '@/types/job-filter';
 import utilCreateQueryString from '@/utils/create-query-string';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import { useCallback } from 'react';
-
-const Keyword = ({ datas, onClick }: { datas: Data[]; onClick: onClick }) => {
-	return (
-		<>
-			{datas.map((data) => (
-				<span
-					key={data.query.value}
-					className={data.style}>
-					<button onClick={() => onClick(data.query.key, data.query.value)}>
-						{data.keyword}
-					</button>
-				</span>
-			))}
-		</>
-	);
-};
 
 export default function Category() {
 	const router = useRouter();
