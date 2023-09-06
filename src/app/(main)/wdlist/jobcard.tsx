@@ -1,4 +1,4 @@
-import type { ProductsAPI, Product } from '@/app/(main)/wdlist/joblist';
+import type { ProductsAPI, Product } from '@/types/product-api';
 import Loading from '@/app/(main)/wdlist/loading';
 import Image from 'next/image';
 
