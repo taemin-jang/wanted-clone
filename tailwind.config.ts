@@ -15,6 +15,9 @@ const config: Config = {
 			maxWidth: {
 				wanted: '66.25rem',
 			},
+			colors: {
+				'primary-light': '#42a5f5',
+			},
 		},
 	},
 	plugins: [],
