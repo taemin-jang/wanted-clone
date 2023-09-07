@@ -4,13 +4,14 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
 const JobCard = ({ jobList }: { jobList: ProductsAPI | undefined }) => {
-	const router = useRouter()
+	// const router = useRouter()
 	if (!jobList) {
-		return <Loading />
+		// return <Loading />
+		return <div className='bg-red-500 w-full h-96'></div>
 	}
 
 	const products: Product[] = jobList.products
-	console.log(products)
+	// console.log(products)
 	return (
 		<>
 			<div className='flex flex-wrap justify-between'>
@@ -18,7 +19,8 @@ const JobCard = ({ jobList }: { jobList: ProductsAPI | undefined }) => {
 					<div
 						key={product.id}
 						className=' w-[250px] h-96 cursor-pointer'
-						onClick={() => router.push(`wd/${product.id}`)}>
+						// onClick={() => router.push(`wd/${product.id}`)}
+					>
 						<Image
 							alt={product.title}
 							src={product.thumbnail}
