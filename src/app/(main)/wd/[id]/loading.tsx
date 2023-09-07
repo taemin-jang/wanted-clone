@@ -8,21 +8,21 @@ export default function Loading() {
 		<Grid
 			container
 			wrap='nowrap'>
-			{Array.from(new Array(4)).map((item, index) => (
+			{Array.from(new Array(1)).map((item, index) => (
 				<Box
 					key={index}
-					sx={{ width: 250, marginRight: 10, my: 5 }}>
+					sx={{ width: 700, marginRight: 10 }}>
 					{item ? (
 						<img
-							style={{ width: 250, height: 118 }}
+							style={{ width: 700, height: 490 }}
 							alt={item.title}
 							src={item.src}
 						/>
 					) : (
 						<Skeleton
 							variant='rectangular'
-							width={210}
-							height={118}
+							width={700}
+							height={490}
 						/>
 					)}
 					{item ? (

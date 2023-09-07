@@ -1,7 +1,7 @@
-import JobList from '@/app/(main)/wdlist/joblist';
-import JobFilter from '@/app/(main)/wdlist/jobfilter';
-import ActiveRecruiting from '@/app/(main)/wdlist/active-recruiting';
-import BookMark from '@/app/(main)/wdlist/bookmark';
+import JobList from '@/app/(main)/wdlist/joblist'
+import JobFilter from '@/app/(main)/wdlist/jobfilter'
+import ActiveRecruiting from '@/app/(main)/wdlist/active-recruiting'
+import BookMark from '@/app/(main)/wdlist/bookmark'
 
 export default function WdList() {
 	return (
@@ -15,5 +15,5 @@ export default function WdList() {
 				<JobList />
 			</section>
 		</>
-	);
+	)
 }

@@ -1,9 +1,9 @@
-'use client';
-import { Data, onClick } from '@/types/job-filter';
-import utilCreateQueryString from '@/utils/create-query-string';
-import ArrowDropDownRoundedIcon from '@mui/icons-material/ArrowDropDownRounded';
-import { usePathname, useSearchParams, useRouter } from 'next/navigation';
-import { useCallback } from 'react';
+'use client'
+import { Data, onClick } from '@/types/job-filter'
+import utilCreateQueryString from '@/utils/create-query-string'
+import ArrowDropDownRoundedIcon from '@mui/icons-material/ArrowDropDownRounded'
+import { usePathname, useSearchParams, useRouter } from 'next/navigation'
+import { useCallback } from 'react'
 
 const JobSort = ({ datas, onClick }: { datas: Data[]; onClick: onClick }) => {
 	return (
@@ -17,24 +17,24 @@ const JobSort = ({ datas, onClick }: { datas: Data[]; onClick: onClick }) => {
 				</option>
 			))}
 		</select>
-	);
-};
+	)
+}
 
 export default function Filter() {
-	const router = useRouter();
-	const pathname = usePathname();
-	const searchParams = useSearchParams();
+	const router = useRouter()
+	const pathname = usePathname()
+	const searchParams = useSearchParams()
 
 	const createQueryString = useCallback(
 		(key: string, value: string) =>
 			utilCreateQueryString(key, value, searchParams),
 		[searchParams],
-	);
+	)
 
 	const onClick = (key: string, value: string) => {
-		console.log(key, value);
-		router.push(pathname + '?' + createQueryString(key, value));
-	};
+		console.log(key, value)
+		router.push(pathname + '?' + createQueryString(key, value))
+	}
 
 	const jobSortDatas: Data[] = [
 		{
@@ -65,7 +65,7 @@ export default function Filter() {
 				value: 'job.popularity_order',
 			},
 		},
-	];
+	]
 	return (
 		<section className='my-8 flex justify-between'>
 			<div>
@@ -93,5 +93,5 @@ export default function Filter() {
 				</button>
 			</div>
 		</section>
-	);
+	)
 }

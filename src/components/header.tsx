@@ -1,6 +1,6 @@
-import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
-import Link from 'next/link';
+import MenuIcon from '@mui/icons-material/Menu'
+import SearchIcon from '@mui/icons-material/Search'
+import Link from 'next/link'
 export const Header_list = () => {
 	const list = [
 		{ data: '채용', checked: true, link: '/wdlist' },
@@ -9,7 +9,7 @@ export const Header_list = () => {
 		{ data: '소셜', checked: false, link: '/community' },
 		{ data: '프리랜서', checked: false, link: '/experts' },
 		{ data: 'AI 합격예측', checked: false, link: '/aiscore/resume' },
-	];
+	]
 	return (
 		<ul className='flex'>
 			{list.map((el, key) => (
@@ -24,8 +24,8 @@ export const Header_list = () => {
 				</li>
 			))}
 		</ul>
-	);
-};
+	)
+}
 
 export default function Header() {
 	return (
@@ -64,5 +64,5 @@ export default function Header() {
 				</aside>
 			</nav>
 		</header>
-	);
+	)
 }

@@ -1,4 +1,4 @@
-import BookmarkSharpIcon from '@mui/icons-material/BookmarkSharp';
+import BookmarkSharpIcon from '@mui/icons-material/BookmarkSharp'
 
 export default function BookMark() {
 	return (
@@ -8,5 +8,5 @@ export default function BookMark() {
 				북마크 모아보기 {'>'}
 			</span>
 		</div>
-	);
+	)
 }
