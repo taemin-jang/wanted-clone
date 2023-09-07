@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 const JobCard = ({ jobList }: { jobList: ProductsAPI | undefined }) => {
 	const router = useRouter()
 	if (!jobList) {
-		return <Loading />
+		return <div className='bg-red-500 w-full h-96'></div>
 	}
 
 	const products: Product[] = jobList.products
