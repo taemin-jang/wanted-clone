@@ -1,4 +1,4 @@
-import ExpandCircleDownOutlinedIcon from '@mui/icons-material/ExpandCircleDownOutlined';
+import ExpandCircleDownOutlinedIcon from '@mui/icons-material/ExpandCircleDownOutlined'
 
 export default function JobGroup() {
 	return (
@@ -16,5 +16,5 @@ export default function JobGroup() {
 				</span>
 			</div>
 		</div>
-	);
+	)
 }

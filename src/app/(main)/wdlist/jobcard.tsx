@@ -1,16 +1,16 @@
-import type { ProductsAPI, Product } from '@/types/product-api';
-import Loading from '@/app/(main)/wdlist/loading';
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import type { ProductsAPI, Product } from '@/types/product-api'
+import Loading from '@/app/(main)/wdlist/loading'
+import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 const JobCard = ({ jobList }: { jobList: ProductsAPI | undefined }) => {
-	const router = useRouter();
+	const router = useRouter()
 	if (!jobList) {
-		return <Loading />;
+		return <Loading />
 	}
 
-	const products: Product[] = jobList.products;
-	console.log(products);
+	const products: Product[] = jobList.products
+	console.log(products)
 	return (
 		<>
 			<div className='flex flex-wrap justify-between'>
@@ -35,7 +35,7 @@ const JobCard = ({ jobList }: { jobList: ProductsAPI | undefined }) => {
 				))}
 			</div>
 		</>
-	);
-};
+	)
+}
 
-export default JobCard;
+export default JobCard

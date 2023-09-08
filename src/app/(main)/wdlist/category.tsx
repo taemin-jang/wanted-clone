@@ -1,24 +1,24 @@
-'use client';
-import Keyword from '@/components/keyword';
-import { Data } from '@/types/job-filter';
-import utilCreateQueryString from '@/utils/create-query-string';
-import { useRouter, usePathname, useSearchParams } from 'next/navigation';
-import { useCallback } from 'react';
+'use client'
+import Keyword from '@/components/keyword'
+import { Data } from '@/types/job-filter'
+import utilCreateQueryString from '@/utils/create-query-string'
+import { useRouter, usePathname, useSearchParams } from 'next/navigation'
+import { useCallback } from 'react'
 
 export default function Category() {
-	const router = useRouter();
-	const pathname = usePathname();
-	const searchParams = useSearchParams();
+	const router = useRouter()
+	const pathname = usePathname()
+	const searchParams = useSearchParams()
 
 	const createQueryString = useCallback(
 		(key: string, value: string) =>
 			utilCreateQueryString(key, value, searchParams),
 		[searchParams],
-	);
+	)
 
 	const onClick = (key: string, value: string) => {
-		router.push(pathname + '?' + createQueryString(key, value));
-	};
+		router.push(pathname + '?' + createQueryString(key, value))
+	}
 
 	const keywordDatas: Data[] = [
 		{
@@ -69,8 +69,8 @@ export default function Category() {
 				value: '10264',
 			},
 		},
-	];
-	console.log(pathname, 'dfd', searchParams);
+	]
+	console.log(pathname, 'dfd', searchParams)
 	return (
 		<section className='my-8'>
 			<div className='flex'>
@@ -80,5 +80,5 @@ export default function Category() {
 				/>
 			</div>
 		</section>
-	);
+	)
 }

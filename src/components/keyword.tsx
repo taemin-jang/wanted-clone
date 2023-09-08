@@ -1,11 +1,11 @@
-import { Data, onClick } from '@/types/job-filter';
+import { Data, onClick } from '@/types/job-filter'
 
 export default function Keyword({
 	datas,
 	onClick,
 }: {
-	datas: Data[];
-	onClick?: onClick;
+	datas: Data[]
+	onClick?: onClick
 }) {
 	return (
 		<>
@@ -22,5 +22,5 @@ export default function Keyword({
 				</span>
 			))}
 		</>
-	);
+	)
 }

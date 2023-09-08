@@ -12,8 +12,8 @@ const RecruitCard = () => {
 				</div>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
 export default function ActiveRecruiting() {
 	return (
@@ -27,5 +27,5 @@ export default function ActiveRecruiting() {
 				<RecruitCard />
 			</div>
 		</div>
-	);
+	)
 }

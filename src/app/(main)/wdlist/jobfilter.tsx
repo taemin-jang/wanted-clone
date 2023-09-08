@@ -1,6 +1,6 @@
-import JobGruop from '@/app/(main)/wdlist/jobgruop';
-import Filter from '@/app/(main)/wdlist/filter';
-import Category from '@/app/(main)/wdlist/category';
+import JobGruop from '@/app/(main)/wdlist/jobgruop'
+import Filter from '@/app/(main)/wdlist/filter'
+import Category from '@/app/(main)/wdlist/category'
 
 export default function JobFilter() {
 	return (
@@ -13,5 +13,5 @@ export default function JobFilter() {
 			</div>
 			<hr />
 		</>
-	);
+	)
 }
