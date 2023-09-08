@@ -2,10 +2,8 @@ import Image from 'next/image'
 import Keyword from '@/components/keyword'
 import { Data } from '@/types/job-filter'
 import { Product } from '@/types/product-api'
-import Loading from '@/app/(main)/wd/[id]/loading'
 
-export default function Content({ data }: { data: Product | undefined }) {
-	if (!data) return <Loading />
+export default function Content({ data }: { data: Product }) {
 	const keywordDatas: Data[] = [
 		{
 			keyword: '#스타트업',
