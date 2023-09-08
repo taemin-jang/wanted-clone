@@ -1,9 +1,9 @@
 import Content from '@/app/(main)/event/content'
 import JobCard from '@/app/(main)/wdlist/jobcard'
-import getProduct from '@/utils/getProduct'
+import getProducts from '@/utils/getProducts'
 
 export default async function Event() {
-	const data = await getProduct('force-cache')
+	const data = await getProducts('force-cache')
 	return (
 		<>
 			<div>
