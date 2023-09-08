@@ -1,16 +1,12 @@
+'use client'
 import type { ProductsAPI, Product } from '@/types/product-api'
-import Loading from '@/app/(main)/wdlist/loading'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
-const JobCard = ({ jobList }: { jobList: ProductsAPI | undefined }) => {
+const JobCard = ({ jobList }: { jobList: ProductsAPI }) => {
 	const router = useRouter()
-	if (!jobList) {
-		return <Loading />
-	}
 
 	const products: Product[] = jobList.products
-	console.log(products)
 	return (
 		<>
 			<div className='flex flex-wrap justify-between'>
