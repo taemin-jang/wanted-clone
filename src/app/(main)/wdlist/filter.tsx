@@ -32,7 +32,6 @@ export default function Filter() {
 	)
 
 	const onClick = (key: string, value: string) => {
-		console.log(key, value)
 		router.push(pathname + '?' + createQueryString(key, value))
 	}
 

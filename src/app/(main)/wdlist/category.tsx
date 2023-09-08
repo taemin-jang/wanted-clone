@@ -70,7 +70,6 @@ export default function Category() {
 			},
 		},
 	]
-	console.log(pathname, 'dfd', searchParams)
 	return (
 		<section className='my-8'>
 			<div className='flex'>
