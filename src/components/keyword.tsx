@@ -1,3 +1,4 @@
+'use client'
 import { Data, onClick } from '@/types/job-filter'
 
 export default function Keyword({

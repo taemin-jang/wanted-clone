@@ -18,6 +18,10 @@ const nextConfig = {
 				protocol: 'https',
 				hostname: 'i.dummyjson.com',
 			},
+			{
+				protocol: 'https',
+				hostname: 'static.wanted.co.kr',
+			},
 		],
 	},
 	swcMinify: true,
