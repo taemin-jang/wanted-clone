@@ -26,7 +26,7 @@ export default async function Event({
 export async function generateStaticParams() {
 	const res = await fetch('https://dummyjson.com/products/categories')
 	const categories: string[] = await res.json()
-	return categories.map((category) => {
-		category
-	})
+	return categories.map((category) => ({
+		category,
+	}))
 }
