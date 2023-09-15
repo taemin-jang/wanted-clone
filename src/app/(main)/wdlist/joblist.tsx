@@ -1,8 +1,8 @@
 import JobCard from '@/app/(main)/wdlist/jobcard'
-import getProducts from '@/utils/getProducts'
+import getJobs from '@/utils/getJobs'
 
 export default async function JobList() {
-	const data = await getProducts('no-store')
+	const data = await getJobs('no-store')
 
 	return <JobCard jobList={data} />
 }
