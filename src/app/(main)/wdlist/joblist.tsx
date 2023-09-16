@@ -1,8 +1,9 @@
 import JobCard from '@/app/(main)/wdlist/jobcard'
-import getJobs from '@/utils/getJobs'
+import { JobAPI } from '@/types/wanted-api'
+import getFetch from '@/utils/getFetch'
 
 export default async function JobList() {
-	const data = await getJobs('no-store')
+	const data: JobAPI = await getFetch('/jobs', 'no-store')
 
 	return <JobCard jobList={data} />
 }
