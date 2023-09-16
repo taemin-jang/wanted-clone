@@ -6,23 +6,23 @@ import { useRouter } from 'next/navigation'
 const JobCard = ({ jobList }: { jobList: JobAPI }) => {
 	const router = useRouter()
 
-	console.log(jobList)
-	const jobs: Job[] = jobList.jobs.data
+	const jobs: Job[] = jobList.data
 	return (
 		<>
 			<div className='flex flex-wrap justify-between'>
 				{jobs.map((job: Job) => (
 					<div
 						key={job.id}
-						className=' w-[250px] h-96 cursor-pointer'
+						className=' w-[250px] h-80 cursor-pointer'
 						onClick={() => router.push(`wd/${job.id}`)}>
-						<Image
-							alt={job.company.name}
-							src={job.title_img.thumb}
-							width={250}
-							height={140}
-							className='border'
-						/>
+						<div className='relative w-full h-[180px]'>
+							<Image
+								alt={job.company.name}
+								src={job.title_img.thumb}
+								fill
+								className='border'
+							/>
+						</div>
 						<div>
 							<h3>{job.company.name}</h3>
 							<p>
