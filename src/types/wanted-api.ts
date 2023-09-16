@@ -35,7 +35,19 @@ export interface Job {
 }
 
 export interface JobAPI {
-	jobs: {
-		data: Job[]
-	}
+	data: Job[]
+}
+
+export interface Targeting {
+	job_count: number
+	ad_id: number
+	name: string
+	title_img: Img
+	logo_img: Img
+	id: number
+	industry_name: string
+}
+
+export interface TargetingAPI {
+	data: Targeting[]
 }

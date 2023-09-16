@@ -2,6 +2,7 @@
 import { initializeApp } from 'firebase/app'
 import { getFirestore, setDoc, doc } from 'firebase/firestore'
 import jobs from '@/data/jobs.json'
+import targeting from '@/data/targeting.json'
 
 const firebaseConfig = {
 	apiKey: process.env.FIREBASE_API_KEY,
@@ -21,6 +22,7 @@ export const db = getFirestore(app)
 export const init = async () => {
 	try {
 		await setDoc(doc(db, 'jobs', 'jobsData'), jobs)
+		await setDoc(doc(db, 'targeting', 'targetingData'), targeting)
 	} catch (error) {
 		console.log(error)
 	}
