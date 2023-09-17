@@ -12,6 +12,14 @@ export interface Job {
 	company: {
 		id: number
 		industry_name: string
+		application_response_stats: {
+			avg_rate: number
+			level: string
+			delayed_count: number
+			avg_day: null
+			remained_count: number
+			type: string
+		}
 		name: string
 	}
 	compare_country: boolean
