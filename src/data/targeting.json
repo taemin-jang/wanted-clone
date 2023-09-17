@@ -1,0 +1,79 @@
+{
+	"data": [
+		{
+			"job_count": 6,
+			"ad_id": 48854,
+			"name": "판도라티비",
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/8042/thcbohtu0l5ejfzs__1080_790.png",
+				"thumb": "https://static.wanted.co.kr/images/company/8042/thcbohtu0l5ejfzs__400_400.png"
+			},
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.451fe2d5.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.451fe2d5.jpg"
+			},
+			"id": 8042,
+			"industry_name": "IT, 컨텐츠"
+		},
+		{
+			"job_count": 9,
+			"ad_id": 49181,
+			"name": "로민",
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/10785/xyb93wefrghj3ppy__1080_790.png",
+				"thumb": "https://static.wanted.co.kr/images/company/10785/xyb93wefrghj3ppy__400_400.png"
+			},
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.b709f231.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.b709f231.jpg"
+			},
+			"id": 10785,
+			"industry_name": "IT, 컨텐츠"
+		},
+		{
+			"job_count": 10,
+			"ad_id": 48971,
+			"name": "자비스앤빌런즈(삼쩜삼)",
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/403/h738rioez3oruu1r__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/403/h738rioez3oruu1r__400_400.jpg"
+			},
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.0e34a18c.png",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.0e34a18c.png"
+			},
+			"id": 403,
+			"industry_name": "IT, 컨텐츠"
+		},
+		{
+			"job_count": 9,
+			"ad_id": 49290,
+			"name": "솜씨당컴퍼니",
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/13043/ixfm0uwavffcbxve__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/13043/ixfm0uwavffcbxve__400_400.jpg"
+			},
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.1df40b0b.png",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.1df40b0b.png"
+			},
+			"id": 13043,
+			"industry_name": "IT, 컨텐츠"
+		},
+		{
+			"job_count": 8,
+			"ad_id": 49274,
+			"name": "카카오뱅크(kakaobank)",
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/593/17824_2_0.__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/593/17824_2_0.__400_400.jpg"
+			},
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.c4add0db.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.c4add0db.jpg"
+			},
+			"id": 593,
+			"industry_name": "금융"
+		}
+	]
+}

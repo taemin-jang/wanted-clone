@@ -1,0 +1,1068 @@
+{
+	"data": [
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 10598,
+				"industry_name": "IT, 컨텐츠",
+				"application_response_stats": {
+					"avg_rate": 100,
+					"level": "very_high",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "윤디자인그룹"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/10598/kzdoqxshixlc2tf3__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/10598/kzdoqxshixlc2tf3__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 0,
+			"id": 180893,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.cb069944.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.cb069944.jpg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "Cunsulting Dept. 영업전략/영업기획자",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 530,
+					"id": 766
+				},
+				{
+					"parent_id": 530,
+					"id": 770
+				},
+				{
+					"parent_id": 530,
+					"id": 1036
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 970,
+				"industry_name": "IT, 컨텐츠",
+				"application_response_stats": {
+					"avg_rate": 90.24,
+					"level": "high",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "엔에이치엔커머스(nhn커머스)"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/970/m2knjewqk6qwtr34__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/970/m2knjewqk6qwtr34__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": "2023-09-30",
+			"like_count": 0,
+			"id": 180891,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.037ef47a.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.037ef47a.jpg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "커머스 플랫폼 백엔드 개발자(부산지사)",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 518,
+					"id": 660
+				},
+				{
+					"parent_id": 518,
+					"id": 873
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 28465,
+				"industry_name": "판매, 유통",
+				"application_response_stats": {
+					"avg_rate": 79.31,
+					"level": "normal",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "한성자동차"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/28465/vbanlyqxryatypln__1080_790.png",
+				"thumb": "https://static.wanted.co.kr/images/company/28465/vbanlyqxryatypln__400_400.png"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 0,
+			"id": 180890,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.c14376bd.jpeg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.c14376bd.jpeg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "메르세데스-벤츠 사업기획(AS) 담당자",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 507,
+					"id": 563
+				},
+				{
+					"parent_id": 507,
+					"id": 564
+				},
+				{
+					"parent_id": 507,
+					"id": 1034
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 429,
+				"industry_name": "IT, 컨텐츠",
+				"application_response_stats": {
+					"avg_rate": 91.22,
+					"level": "high",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "루닛(Lunit)"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/429/pw2em9cawgspwx2j__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/429/pw2em9cawgspwx2j__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": "2023-10-05",
+			"like_count": 0,
+			"id": 180888,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.97dbde22.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.97dbde22.jpg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "해외 자회사 자금담당자",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 507,
+					"id": 1034
+				},
+				{
+					"parent_id": 507,
+					"id": 10116
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 4088,
+				"industry_name": "IT, 컨텐츠",
+				"application_response_stats": {
+					"avg_rate": 100,
+					"level": "very_high",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "드림에이스"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/4088/oueptcfbm51jzaj2__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/4088/oueptcfbm51jzaj2__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": "2023-10-14",
+			"like_count": 0,
+			"id": 180887,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.00ae527f.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.00ae527f.jpg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "사내 변호사",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 521,
+					"id": 691
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 220,
+				"industry_name": "IT, 컨텐츠",
+				"application_response_stats": {
+					"avg_rate": 96.36,
+					"level": "very_high",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "바비톡"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/220/2o67lutijomkho9x__1080_790.png",
+				"thumb": "https://static.wanted.co.kr/images/company/220/2o67lutijomkho9x__400_400.png"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 1,
+			"id": 180886,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4_f36694ef-0d57-4314-ac55-ea57976c3661.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5_f36694ef-0d57-4314-ac55-ea57976c3661.jpg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "프로모션, 콘텐츠 운영 매니저 (1년 계약직)",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 523,
+					"id": 719
+				},
+				{
+					"parent_id": 523,
+					"id": 1030
+				},
+				{
+					"parent_id": 523,
+					"id": 1635
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 24931,
+				"industry_name": "교육",
+				"application_response_stats": {
+					"avg_rate": 57.24,
+					"level": "low",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "배움"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/24931/5obrnawwcykv3zcz__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/24931/5obrnawwcykv3zcz__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 0,
+			"id": 180884,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.6acd6a22.png",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.6acd6a22.png"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "원격학점은행 상품개발팀(콘텐츠) 팀장",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 10101,
+					"id": 10103
+				},
+				{
+					"parent_id": 10101,
+					"id": 10109
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 9725,
+				"industry_name": "IT, 컨텐츠",
+				"application_response_stats": {
+					"avg_rate": 100,
+					"level": "very_high",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "미띵스"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/9725/kzqqewuzvnn9jb9l__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/9725/kzqqewuzvnn9jb9l__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 0,
+			"id": 180882,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.d3d82859.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.d3d82859.jpg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "경기"
+			},
+			"matching_score": null,
+			"position": "프로젝트 매니저",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 507,
+					"id": 559
+				},
+				{
+					"parent_id": 507,
+					"id": 564
+				},
+				{
+					"parent_id": 507,
+					"id": 565
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 24931,
+				"industry_name": "교육",
+				"application_response_stats": {
+					"avg_rate": 57.24,
+					"level": "low",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "배움"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/24931/5obrnawwcykv3zcz__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/24931/5obrnawwcykv3zcz__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 0,
+			"id": 180881,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.6acd6a22.png",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.6acd6a22.png"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "마케팅팀 팀장",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 523,
+					"id": 707
+				},
+				{
+					"parent_id": 523,
+					"id": 719
+				},
+				{
+					"parent_id": 523,
+					"id": 10138
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 30985,
+				"industry_name": "제조",
+				"application_response_stats": {
+					"avg_rate": 77.19,
+					"level": "normal",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "바이오플러스"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/30985/6nwmorxwiz90kxzk__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/30985/6nwmorxwiz90kxzk__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 0,
+			"id": 180880,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.69462cdb.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.69462cdb.jpg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "경기"
+			},
+			"matching_score": null,
+			"position": "구매자재",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 522,
+					"id": 699
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 18182,
+				"industry_name": "기타 서비스업",
+				"application_response_stats": {
+					"avg_rate": 100,
+					"level": "very_high",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "엑스바이블루"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/18182/hkhzauxsjl4ohqvh__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/18182/hkhzauxsjl4ohqvh__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": "2023-10-31",
+			"like_count": 0,
+			"id": 180878,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.0a60e470.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.0a60e470.jpg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "콘텐츠 디자이너",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 511,
+					"id": 592
+				},
+				{
+					"parent_id": 511,
+					"id": 594
+				},
+				{
+					"parent_id": 511,
+					"id": 602
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 30985,
+				"industry_name": "제조",
+				"application_response_stats": {
+					"avg_rate": 77.19,
+					"level": "normal",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "바이오플러스"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/30985/6nwmorxwiz90kxzk__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/30985/6nwmorxwiz90kxzk__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 0,
+			"id": 180876,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.69462cdb.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.69462cdb.jpg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "경기"
+			},
+			"matching_score": null,
+			"position": "의료기기 QA",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 522,
+					"id": 704
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 10130,
+				"industry_name": "금융",
+				"application_response_stats": {
+					"avg_rate": 55.79,
+					"level": "low",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "에이아이에이생명(AIA생명)"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/10130/doenoxyifspclnmm__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/10130/doenoxyifspclnmm__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 0,
+			"id": 180874,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.e8aade5f.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.e8aade5f.jpg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "IT Secruity Professional (Cloud)",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 518,
+					"id": 665
+				},
+				{
+					"parent_id": 518,
+					"id": 671
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 1755,
+				"industry_name": "IT, 컨텐츠",
+				"application_response_stats": {
+					"avg_rate": 99.21,
+					"level": "very_high",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "유니브"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/1755/ljjhsgcntrktvdwm__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/1755/ljjhsgcntrktvdwm__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 0,
+			"id": 180870,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.b57505d2.png",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.b57505d2.png"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "유니브클래스 PD",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 524,
+					"id": 723
+				},
+				{
+					"parent_id": 524,
+					"id": 727
+				},
+				{
+					"parent_id": 524,
+					"id": 1046
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 23808,
+				"industry_name": "숙박, 음식점",
+				"application_response_stats": {
+					"avg_rate": 11.76,
+					"level": "very_low",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "셀립"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/23808/v0h0hnbrkhg9unnv__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/23808/v0h0hnbrkhg9unnv__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 0,
+			"id": 180869,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.b08122cc.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.b08122cc.jpg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "그래픽 디자이너",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 511,
+					"id": 592
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 10130,
+				"industry_name": "금융",
+				"application_response_stats": {
+					"avg_rate": 55.79,
+					"level": "low",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "에이아이에이생명(AIA생명)"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/10130/doenoxyifspclnmm__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/10130/doenoxyifspclnmm__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 0,
+			"id": 180868,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.e8aade5f.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.e8aade5f.jpg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "Data Analyst",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 518,
+					"id": 655
+				},
+				{
+					"parent_id": 518,
+					"id": 1024
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 100,
+				"industry_name": "부동산",
+				"application_response_stats": {
+					"avg_rate": 50,
+					"level": "low",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "셰어하우스우주"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/100/ero0l7adihjbrpqw__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/100/ero0l7adihjbrpqw__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 0,
+			"id": 180867,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.26ac1be2.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.26ac1be2.jpg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "그래픽 디자이너",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 511,
+					"id": 592
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 45583,
+				"industry_name": "IT, 컨텐츠",
+				"application_response_stats": {
+					"avg_rate": 0,
+					"level": "very_low",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "지이피(zep)"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/45583/hrklgsf6kgvxfz8d__1080_790.png",
+				"thumb": "https://static.wanted.co.kr/images/company/45583/hrklgsf6kgvxfz8d__400_400.png"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 0,
+			"id": 180866,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.e3b39e28.jpg",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.e3b39e28.jpg"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "CX 담당자 (2년 이상)",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 510,
+					"id": 586
+				},
+				{
+					"parent_id": 510,
+					"id": 901
+				},
+				{
+					"parent_id": 510,
+					"id": 1028
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 8794,
+				"industry_name": "IT, 컨텐츠",
+				"application_response_stats": {
+					"avg_rate": 73.07,
+					"level": "low",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "포티투닷(42dot)"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/8794/i3kjj2as94ho8hgg__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/8794/i3kjj2as94ho8hgg__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": null,
+			"like_count": 0,
+			"id": 180864,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.a2574442.png",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.a2574442.png"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "Recruiting Coordinator (1년 계약직)",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 517,
+					"id": 644
+				}
+			]
+		},
+		{
+			"status": "active",
+			"reward": {
+				"formatted_total": "100만원",
+				"formatted_recommender": "50만원",
+				"formatted_recommendee": "50만원"
+			},
+			"is_like": false,
+			"is_bookmark": false,
+			"company": {
+				"id": 25775,
+				"industry_name": "IT, 컨텐츠",
+				"application_response_stats": {
+					"avg_rate": 0,
+					"level": "very_low",
+					"delayed_count": 0,
+					"avg_day": null,
+					"remained_count": 0,
+					"type": "applied_reply_done"
+				},
+				"name": "오웰헬스"
+			},
+			"title_img": {
+				"origin": "https://static.wanted.co.kr/images/company/25775/grto0ftgb1pmvzfw__1080_790.jpg",
+				"thumb": "https://static.wanted.co.kr/images/company/25775/grto0ftgb1pmvzfw__400_400.jpg"
+			},
+			"compare_country": true,
+			"due_time": "2023-09-24",
+			"like_count": 0,
+			"id": 180863,
+			"logo_img": {
+				"origin": "https://static.wanted.co.kr/images/wdes/0_4.822051cd.png",
+				"thumb": "https://static.wanted.co.kr/images/wdes/0_5.822051cd.png"
+			},
+			"address": {
+				"country": "한국",
+				"location": "서울"
+			},
+			"matching_score": null,
+			"position": "사업개발 매니저",
+			"hidden": false,
+			"score": null,
+			"category_tags": [
+				{
+					"parent_id": 507,
+					"id": 564
+				}
+			]
+		}
+	]
+}
