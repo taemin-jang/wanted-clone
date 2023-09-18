@@ -21,8 +21,12 @@ export const db = getFirestore(app)
 // Initialize JSON data
 export const init = async () => {
 	try {
-		await setDoc(doc(db, 'jobs', 'jobsData'), jobs)
-		await setDoc(doc(db, 'targeting', 'targetingData'), targeting)
+		// jobs.data.forEach(
+		// 	async (job) => await setDoc(doc(db, 'jobs', job.company.name), job),
+		// )
+		// targeting.data.forEach(
+		// 	async (target) => await setDoc(doc(db, 'targeting', target.name), target),
+		// )
 	} catch (error) {
 		console.log(error)
 	}
