@@ -6,6 +6,6 @@ export async function GET(
 	{ params }: { params: { id: string } },
 ) {
 	const jobDetail = await getWanted(`/v4/jobs/${params.id}`)
-
-	return NextResponse.json(jobDetail)
+	const newJob = await getWanted(`/v4/jobs/${params.id}/associated_jobs`)
+	return NextResponse.json({ newJob, jobDetail })
 }

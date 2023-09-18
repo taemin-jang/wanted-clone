@@ -1,3 +1,5 @@
+import { Tag } from '@/types/job-filter'
+
 interface Img {
 	origin: string
 	thumb: string
@@ -57,7 +59,7 @@ export interface JobDetail extends Job {
 	skill_tags: []
 	has_analysis: boolean
 	is_company_follow: boolean
-	company_tags: { title: string; id: number; kind_title: string }[]
+	company_tags: Tag[]
 	short_link?: string
 	category_tags: { parent_id: number; id: number }[]
 }
