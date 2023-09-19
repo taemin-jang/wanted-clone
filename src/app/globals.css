@@ -20,3 +20,11 @@ body {
 	color: rgb(var(--foreground-rgb));
 	/* background:  */
 }
+
+@layer utilities {
+	.fixed-layout {
+		position: fixed;
+		right: calc((100% - 1060px) / 2);
+		top: 95px;
+	}
+}
