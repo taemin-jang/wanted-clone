@@ -7,4 +7,10 @@ export interface Data {
 	}
 }
 
+export interface Tag extends Data {
+	id: number
+	kind_title: string
+	title: string
+}
+
 export type onClick = (key: string, value: string) => void

@@ -1,3 +1,5 @@
+import { Tag } from '@/types/job-filter'
+
 interface Img {
 	origin: string
 	thumb: string
@@ -7,6 +9,7 @@ export interface Job {
 	address: {
 		country: string
 		location: string
+		full_location?: string
 	}
 	category_tags: { id: number; parent_id: number }[]
 	company: {
@@ -40,6 +43,25 @@ export interface Job {
 	score?: number
 	status: string
 	title_img: Img
+}
+
+export interface JobDetail extends Job {
+	is_crossboarder: boolean
+	is_like: boolean
+	detail: {
+		requirements: string
+		main_tasks: string
+		intro: string
+		benefits: string
+		preferred_points: string
+	}
+	company_images: { url: string; id: number }[]
+	skill_tags: []
+	has_analysis: boolean
+	is_company_follow: boolean
+	company_tags: Tag[]
+	short_link?: string
+	category_tags: { parent_id: number; id: number }[]
 }
 
 export interface JobAPI {
