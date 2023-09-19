@@ -15,7 +15,7 @@ const JobCard = ({ jobList }: { jobList: JobAPI }) => {
 					<div
 						key={job.id}
 						className=' w-[250px] h-96 cursor-pointer mb-4'
-						onClick={() => router.push(`wd/${job.id}`)}>
+						onClick={() => router.push(`/wd/${job.id}`)}>
 						<div className='relative w-full h-[180px]'>
 							<BookmarkBorderIcon
 								className='absolute top-1 right-1 z-10'
