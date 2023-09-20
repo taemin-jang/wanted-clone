@@ -28,4 +28,12 @@
 		right: calc((100% - 1060px) / 2);
 		top: 95px;
 	}
+	.form-layout {
+		overflow: auto;
+		max-height: calc(100vh - 100px);
+		-ms-overflow-style: none;
+	}
+	.form-layout::-webkit-scrollbar {
+		display: none;
+	}
 }
