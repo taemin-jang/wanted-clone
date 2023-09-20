@@ -190,19 +190,20 @@ export default function Content({ api }: { api: API }) {
 							<p className='text-sm'>3</p>
 						</div>
 						<div className='flex relative'>
-							{jobDetail.like_users.map((user, index) => (
-								<div
-									key={user.id}
-									className={`-ml-2`}>
-									<Image
-										src={user.avatar}
-										alt={user.name}
-										width={30}
-										height={30}
-										className='border border-white rounded-full'
-									/>
-								</div>
-							))}
+							{jobDetail.like_users &&
+								jobDetail.like_users.map((user, index) => (
+									<div
+										key={user.id}
+										className={`-ml-2`}>
+										<Image
+											src={user.avatar}
+											alt={user.name}
+											width={30}
+											height={30}
+											className='border border-white rounded-full'
+										/>
+									</div>
+								))}
 						</div>
 					</div>
 				</div>

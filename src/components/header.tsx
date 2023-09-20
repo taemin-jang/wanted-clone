@@ -50,7 +50,7 @@ export default function Header() {
 							</button>
 						</li>
 						<li className='mx-4 text-sm font-bold'>
-							<button>회원가입/로그인</button>
+							<Link href={'/signin'}>회원가입/로그인</Link>
 						</li>
 						<li className='mx-4 text-xs text-gray-300'>|</li>
 						<li className='mx-4'>
