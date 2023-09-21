@@ -19,6 +19,7 @@ const config: Config = {
 			},
 			colors: {
 				'primary-light': '#42a5f5',
+				'naver-main': '#03c75a',
 			},
 		},
 	},
