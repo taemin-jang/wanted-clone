@@ -153,8 +153,15 @@ export default function Signin() {
 			<div className='flex flex-col w-full gap-3 my-2'>
 				<p className='text-center text-xs text-gray-400 font-semibold'>또는</p>
 				<div className='flex justify-evenly text-xs text-gray-400 font-semibold'>
-					<button className='flex flex-col gap-1 justify-center items-center'>
-						<svg
+					<button
+						className='flex flex-col gap-1 justify-center items-center'
+						onClick={() =>
+							signIn('naver', {
+								redirect: true,
+								callbackUrl: '/',
+							})
+						}>
+						{/* <svg
 							viewBox='0 0 57 56'
 							className='h-14 w-14'>
 							<path
@@ -163,8 +170,15 @@ export default function Signin() {
 							<path
 								d='M28.8182 19.359C30.0068 19.359 31.4968 18.5307 32.384 17.4264C33.1876 16.4256 33.7736 15.0279 33.7736 13.6302C33.7736 13.4404 33.7568 13.2506 33.7233 13.0953C32.4008 13.147 30.8104 14.0098 29.8561 15.1659C29.1028 16.046 28.4164 17.4264 28.4164 18.8413C28.4164 19.0484 28.4499 19.2555 28.4666 19.3245C28.5503 19.3418 28.6843 19.359 28.8182 19.359ZM24.6329 40.2381C26.2568 40.2381 26.9767 39.1165 29.0023 39.1165C31.0615 39.1165 31.5135 40.2036 33.3215 40.2036C35.0961 40.2036 36.2847 38.5126 37.4064 36.8561C38.6619 34.958 39.1809 33.0944 39.2144 33.0081C39.0972 32.9736 35.6988 31.5414 35.6988 27.5209C35.6988 24.0352 38.3773 22.465 38.528 22.3442C36.7535 19.7214 34.0581 19.6524 33.3215 19.6524C31.3294 19.6524 29.7055 20.8947 28.6843 20.8947C27.5794 20.8947 26.1229 19.7214 24.3986 19.7214C21.1173 19.7214 17.7858 22.5168 17.7858 27.7969C17.7858 31.0755 19.0247 34.5438 20.5481 36.787C21.8539 38.6851 22.9923 40.2381 24.6329 40.2381Z'
 								fill='white'></path>
-						</svg>
-						<p>Apple</p>
+						</svg> */}
+						<div className='h-14 w-14 p-3 rounded-full border bg-naver-main'>
+							<svg
+								viewBox='0 0 24 24'
+								fill='white'>
+								<path d='M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z'></path>
+							</svg>
+						</div>
+						<p>Naver</p>
 					</button>
 					<button
 						className='flex flex-col gap-1 justify-center items-center'
