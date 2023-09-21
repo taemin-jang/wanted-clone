@@ -16,6 +16,7 @@ import { logIn, logOut } from '@/redux/slice/auth-slice'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 
+import { signIn } from 'next-auth/react'
 interface ErrorState {
 	isError: boolean
 	message: string
@@ -84,6 +85,7 @@ export default function Signin() {
 	const router = useRouter()
 	let error = useRef({ isError: false, message: '', type: '' })
 	const [selected, setSelected] = useState({ value: 'korean', icon: 'KR' })
+
 	const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
 		switch (e.target.value) {
 			case 'korean':
@@ -192,7 +194,14 @@ export default function Signin() {
 						</svg>
 						<p>Google</p>
 					</button>
-					<button className='flex flex-col gap-1 justify-center items-center'>
+					<button
+						className='flex flex-col gap-1 justify-center items-center'
+						onClick={() =>
+							signIn('kakao', {
+								redirect: true,
+								callbackUrl: '/',
+							})
+						}>
 						<svg
 							viewBox='0 0 57 56'
 							className='h-14 w-14'>
