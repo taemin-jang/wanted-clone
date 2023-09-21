@@ -96,7 +96,6 @@ export default function Signin() {
 				break
 			case 'japanese':
 				setSelected({ value: 'japanese', icon: 'JP' })
-
 				break
 		}
 	}
@@ -167,7 +166,14 @@ export default function Signin() {
 						</svg>
 						<p>Apple</p>
 					</button>
-					<button className='flex flex-col gap-1 justify-center items-center'>
+					<button
+						className='flex flex-col gap-1 justify-center items-center'
+						onClick={() =>
+							signIn('google', {
+								redirect: true,
+								callbackUrl: '/',
+							})
+						}>
 						<svg
 							viewBox='0 0 57 56'
 							className='h-14 w-14 border rounded-full'>

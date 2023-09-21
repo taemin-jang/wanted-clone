@@ -1,5 +1,6 @@
 import type { NextAuthOptions } from 'next-auth'
 import KakaoProvider from 'next-auth/providers/kakao'
+import GoogleProvider from 'next-auth/providers/google'
 import CredentialsProvider from 'next-auth/providers/credentials'
 
 export const options: NextAuthOptions = {
@@ -7,6 +8,10 @@ export const options: NextAuthOptions = {
 		KakaoProvider({
 			clientId: process.env.KAKAO_API_KEY as string,
 			clientSecret: process.env.KAKAO_SECRET_KEY as string,
+		}),
+		GoogleProvider({
+			clientId: process.env.GOOGLE_API_KEY as string,
+			clientSecret: process.env.GOOGLE_SECRET_KEY as string,
 		}),
 		CredentialsProvider({
 			name: 'Credentials',
