@@ -69,13 +69,15 @@ export default function Header() {
 							{session?.user ? (
 								<span className='flex items-center gap-4'>
 									<NotificationsNoneOutlinedIcon />
-									<Image
-										src={session.user.image as string}
-										alt={session.user.name as string}
-										width={26}
-										height={26}
-										className='rounded-full'
-									/>
+									<Link href={'/my/profile'}>
+										<Image
+											src={session.user.image as string}
+											alt={session.user.name as string}
+											width={26}
+											height={26}
+											className='rounded-full cursor-pointer'
+										/>
+									</Link>
 								</span>
 							) : (
 								<Link href={'/signin'}>회원가입/로그인</Link>
