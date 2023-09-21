@@ -1,6 +1,13 @@
+'use client'
 import MenuIcon from '@mui/icons-material/Menu'
 import SearchIcon from '@mui/icons-material/Search'
+import { Session } from 'next-auth'
+import { getSession } from 'next-auth/react'
 import Link from 'next/link'
+import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined'
+
 export const Header_list = () => {
 	const list = [
 		{ data: '채용', checked: true, link: '/wdlist' },
@@ -28,6 +35,15 @@ export const Header_list = () => {
 }
 
 export default function Header() {
+	const [session, setSession] = useState<Session | null>(null)
+	useEffect(() => {
+		;(async () => {
+			const res = await getSession()
+			setSession(res)
+			console.log('session', res)
+		})()
+	}, [])
+
 	return (
 		<header className='border-b-2 border-gray-200'>
 			<nav className='max-w-wanted flex justify-between items-center m-auto'>
@@ -50,7 +66,20 @@ export default function Header() {
 							</button>
 						</li>
 						<li className='mx-4 text-sm font-bold'>
-							<Link href={'/signin'}>회원가입/로그인</Link>
+							{session?.user ? (
+								<span className='flex items-center gap-4'>
+									<NotificationsNoneOutlinedIcon />
+									<Image
+										src={session.user.image as string}
+										alt={session.user.name as string}
+										width={26}
+										height={26}
+										className='rounded-full'
+									/>
+								</span>
+							) : (
+								<Link href={'/signin'}>회원가입/로그인</Link>
+							)}
 						</li>
 						<li className='mx-4 text-xs text-gray-300'>|</li>
 						<li className='mx-4'>
