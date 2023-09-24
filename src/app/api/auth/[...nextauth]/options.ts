@@ -5,7 +5,7 @@ import NaverProvider from 'next-auth/providers/naver'
 import CredentialsProvider from 'next-auth/providers/credentials'
 import { FirestoreAdapter } from '@next-auth/firebase-adapter'
 import { cert } from 'firebase-admin/app'
-import { getServerSession } from 'next-auth/next'
+import { getUserInfoFromKakao } from '@/utils/getUserInfo'
 
 export const options: NextAuthOptions = {
 	adapter: FirestoreAdapter({
@@ -59,34 +59,23 @@ export const options: NextAuthOptions = {
 	],
 	callbacks: {
 		async signIn({ user, account, profile, email, credentials }) {
-			const kakaoAPIUrl = 'https://kapi.kakao.com/v2/user/me'
 			const access_token = account?.access_token
-			const getUserInfoFromKakao = async (accessToken: any) => {
-				try {
-					const response = await fetch(kakaoAPIUrl, {
-						method: 'GET',
-						headers: {
-							Authorization: `Bearer ${accessToken}`,
-						},
-					})
+			let isAllowedToSignIn: boolean | undefined
 
-					if (!response.ok) {
-						throw new Error('Failed to fetch user info from Kakao')
-					}
-
-					const userData = await response.json()
-
-					// Kakao API로부터 받은 사용자 정보를 처리
-					// Firebase 사용자 생성 또는 업데이트
-					// Firebase Custom Token 생성 (선택 사항)
-
-					return userData
-				} catch (error) {
-					console.error('Error fetching user info from Kakao:', error)
-					throw error
-				}
+			switch (account?.provider) {
+				case 'kakao':
+					isAllowedToSignIn = await getUserInfoFromKakao(access_token)
+					break
+				case 'google':
+					isAllowedToSignIn =
+						profile?.email_verified && profile?.email?.endsWith('@gmail.com')
+					break
+				case 'naver':
+					isAllowedToSignIn =
+						profile?.message === 'success' &&
+						profile?.response?.email.endsWith('@naver.com')
+					break
 			}
-			const isAllowedToSignIn = await getUserInfoFromKakao(access_token)
 
 			if (isAllowedToSignIn) {
 				return true
