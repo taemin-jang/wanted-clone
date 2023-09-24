@@ -22,6 +22,22 @@ const nextConfig = {
 				protocol: 'https',
 				hostname: 'static.wanted.co.kr',
 			},
+			{
+				protocol: 'https',
+				hostname: 's3.ap-northeast-2.amazonaws.com',
+			},
+			{
+				protocol: 'http',
+				hostname: 'k.kakaocdn.net',
+			},
+			{
+				protocol: 'https',
+				hostname: 'lh3.googleusercontent.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'ssl.pstatic.net',
+			},
 		],
 	},
 	swcMinify: true,

@@ -1,6 +1,8 @@
 import '@/app/globals.css'
+import Container from '@/app/(form)/container'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Provider from '@/contexts/prtovider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,9 +16,20 @@ export default function FormRootLayout({
 }: {
 	children: React.ReactNode
 }) {
+	// return (
+	// 	<div id='signup'>
+	// 		<Container>{children}</Container>
+	// 	</div>
+	// )
 	return (
-		<html lang='en'>
-			<body className={inter.className}>{children}</body>
+		<html
+			lang='en'
+			id='signup'>
+			<body>
+				<Provider>
+					<Container>{children}</Container>
+				</Provider>
+			</body>
 		</html>
 	)
 }

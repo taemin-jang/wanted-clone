@@ -6,6 +6,7 @@
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
 	--background-end-rgb: 255, 255, 255;
+	--background-rgb: 247, 247, 247;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,7 +17,23 @@
 	}
 }
 
-body {
+#signup body {
 	color: rgb(var(--foreground-rgb));
-	/* background:  */
+	background: rgb(var(--background-rgb));
+}
+
+@layer utilities {
+	.fixed-layout {
+		position: fixed;
+		right: calc((100% - 1060px) / 2);
+		top: 95px;
+	}
+	.form-layout {
+		overflow: auto;
+		max-height: calc(100vh - 100px);
+		-ms-overflow-style: none;
+	}
+	.form-layout::-webkit-scrollbar {
+		display: none;
+	}
 }
