@@ -23,10 +23,10 @@
 }
 
 @layer utilities {
-	.fixed-layout {
-		position: fixed;
-		right: calc((100% - 1060px) / 2);
-		top: 95px;
+	.sticky-layout {
+		position: sticky;
+		/* right: calc((100% - 1060px) / 2); */
+		top: 50px;
 	}
 	.form-layout {
 		overflow: auto;
