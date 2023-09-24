@@ -10,6 +10,17 @@ export interface Job {
 		country: string
 		location: string
 		full_location?: string
+		geo_location: {
+			n_location: {
+				lng: number
+				lat: number
+				address: string
+			}
+			location: {
+				lng: number
+				lat: number
+			}
+		}
 	}
 	category_tags: { id: number; parent_id: number }[]
 	company: {

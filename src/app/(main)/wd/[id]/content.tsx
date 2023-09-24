@@ -8,6 +8,7 @@ import Loading from '@/app/(main)/wdlist/loading'
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined'
 import BookmarkBorderSharpIcon from '@mui/icons-material/BookmarkBorderSharp'
 import FavoriteIcon from '@mui/icons-material/Favorite'
+import Map from '@/app/(main)/wd/[id]/map'
 interface API {
 	newJob: {
 		data: Job[]
@@ -92,6 +93,10 @@ export default function Content({ api }: { api: API }) {
 							<span>{`${jobDetail.job.address.full_location}`}</span>
 						</span>
 					</div>
+					<Map
+						lng={jobDetail.job.address.geo_location.n_location.lng}
+						lat={jobDetail.job.address.geo_location.n_location.lat}
+					/>
 					<div className='flex border rounded p-5 w-full mt-20'>
 						<Image
 							src={jobDetail.job.logo_img.thumb}
