@@ -3,9 +3,18 @@ import KakaoProvider from 'next-auth/providers/kakao'
 import GoogleProvider from 'next-auth/providers/google'
 import NaverProvider from 'next-auth/providers/naver'
 import CredentialsProvider from 'next-auth/providers/credentials'
+import { FirestoreAdapter } from '@next-auth/firebase-adapter'
+import { cert } from 'firebase-admin/app'
+import { getServerSession } from 'next-auth/next'
 
 export const options: NextAuthOptions = {
-	secret: process.env.AUTH_SECRET,
+	adapter: FirestoreAdapter({
+		credential: cert({
+			projectId: process.env.FIREBASE_PROJECT_ID,
+			clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+			privateKey: process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+		}),
+	}),
 	providers: [
 		KakaoProvider({
 			clientId: process.env.KAKAO_API_KEY as string,
@@ -49,13 +58,41 @@ export const options: NextAuthOptions = {
 		}),
 	],
 	callbacks: {
-		async jwt({ token, user }) {
-			return { ...token, ...user }
-		},
+		async signIn({ user, account, profile, email, credentials }) {
+			const kakaoAPIUrl = 'https://kapi.kakao.com/v2/user/me'
+			const access_token = account?.access_token
+			const getUserInfoFromKakao = async (accessToken: any) => {
+				try {
+					const response = await fetch(kakaoAPIUrl, {
+						method: 'GET',
+						headers: {
+							Authorization: `Bearer ${accessToken}`,
+						},
+					})
 
-		async session({ session, token }) {
-			session.user = token as any
-			return session
+					if (!response.ok) {
+						throw new Error('Failed to fetch user info from Kakao')
+					}
+
+					const userData = await response.json()
+
+					// Kakao API로부터 받은 사용자 정보를 처리
+					// Firebase 사용자 생성 또는 업데이트
+					// Firebase Custom Token 생성 (선택 사항)
+
+					return userData
+				} catch (error) {
+					console.error('Error fetching user info from Kakao:', error)
+					throw error
+				}
+			}
+			const isAllowedToSignIn = await getUserInfoFromKakao(access_token)
+
+			if (isAllowedToSignIn) {
+				return true
+			} else {
+				return false
+			}
 		},
 	},
 	pages: {
