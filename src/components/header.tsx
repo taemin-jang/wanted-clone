@@ -1,11 +1,8 @@
 'use client'
 import MenuIcon from '@mui/icons-material/Menu'
 import SearchIcon from '@mui/icons-material/Search'
-import { Session } from 'next-auth'
-import { getSession } from 'next-auth/react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined'
 import { useSession } from 'next-auth/react'
 
@@ -36,16 +33,7 @@ export const Header_list = () => {
 }
 
 export default function Header() {
-	// const [session, setSession] = useState<Session | null>(null)
 	const { data: session } = useSession()
-	console.log(session)
-	// useEffect(() => {
-	// 	;(async () => {
-	// 		const res = await getSession()
-	// 		setSession(res)
-	// 		console.log('session', res)
-	// 	})()
-	// }, [])
 
 	return (
 		<header className='border-b-2 border-gray-200'>

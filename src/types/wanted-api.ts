@@ -92,3 +92,21 @@ export interface Targeting {
 export interface TargetingAPI {
 	data: Targeting[]
 }
+
+export interface Detail {
+	job: JobDetail
+	like_users: LikeUser[]
+}
+
+export interface API {
+	newJob: {
+		data: Job[]
+	}
+	jobDetail: Detail
+}
+
+interface LikeUser {
+	avatar: string
+	id: number
+	name: string
+}
