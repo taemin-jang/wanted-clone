@@ -3,7 +3,7 @@ import BookMark from '@/app/(main)/wdlist/bookmark'
 import dynamic from 'next/dynamic'
 import Loading from '@/app/(main)/wdlist/loading'
 
-export default function WdList() {
+export default function WdList({ params }: { params: { id: string } }) {
 	const JobList = dynamic(() => import('@/app/(main)/wdlist/joblist'), {
 		ssr: false,
 		loading: () => <Loading />,

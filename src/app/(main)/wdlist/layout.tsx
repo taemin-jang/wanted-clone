@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import JobFilter from '@/app/(main)/wdlist/jobfilter'
 
 export const metadata: Metadata = {
 	title: 'Wanted Clone',
@@ -10,5 +11,10 @@ export default function MainRootLayout({
 }: {
 	children: React.ReactNode
 }) {
-	return <div>{children}</div>
+	return (
+		<div>
+			<JobFilter />
+			{children}
+		</div>
+	)
 }

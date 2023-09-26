@@ -78,6 +78,7 @@ export default function Content({ api }: { api: API }) {
 						</span>
 					</div>
 					<Map
+						address={jobDetail.job.address.geo_location.n_location.address}
 						lng={jobDetail.job.address.geo_location.n_location.lng}
 						lat={jobDetail.job.address.geo_location.n_location.lat}
 					/>
