@@ -6,7 +6,7 @@ import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
 
 const JobCard = ({ jobList }: { jobList: JobAPI }) => {
 	const router = useRouter()
-
+	console.log(jobList)
 	const jobs: Job[] = jobList.data
 	return (
 		<>

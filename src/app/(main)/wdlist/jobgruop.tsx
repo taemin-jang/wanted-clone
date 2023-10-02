@@ -3,7 +3,7 @@ import utilCreateQueryString from '@/utils/create-query-string'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import Link from 'next/link'
 import { usePathname, useSearchParams, useRouter } from 'next/navigation'
-import { useCallback, useState } from 'react'
+import { useCallback, useState, useRef, MutableRefObject } from 'react'
 import jobObj from '@/data/jobObj.json'
 const JobCategory = () => {
 	return (
@@ -49,12 +49,12 @@ const DetailCategory = ({
 				{jobObj.data[index].detail?.map((job) => (
 					<li
 						className='text-xs hover:border hover:border-blue-200 border border-white rounded-full cursor-pointer bg-gray-100'
-						key={job.title}>
-						<Link
+						key={job.path}>
+						<p
 							className='flex px-4 py-2'
-							href={`?tag=${job.path}`}>
+							id={job.path}>
 							{job.title}
-						</Link>
+						</p>
 					</li>
 				))}
 			</ul>
@@ -68,15 +68,15 @@ export default function JobGroup() {
 		isSelect: false,
 		index: 1,
 	})
-	const [detailState, setdetaolState] = useState({
+	const [detailState, setdetailState] = useState({
 		isSelect: false,
 		value: undefined,
 	})
+	const detailMap: MutableRefObject<Map<string, string>> = useRef(new Map())
 
 	const router = useRouter()
 	const pathname = usePathname()
 	const searchParams = useSearchParams()
-
 	const createQueryString = useCallback(
 		(key: string, value: string) =>
 			utilCreateQueryString(key, value, searchParams),
@@ -91,13 +91,18 @@ export default function JobGroup() {
 		})
 	}
 	const onClickDetail = (e: React.MouseEvent<HTMLAnchorElement>) => {
-		console.log(e)
-		console.log(detailState)
-
-		setdetaolState({
-			value: e.target.text ? e.target.text : detailState.value,
-			isSelect: e.target.innerText === '선택 완료하기' ? false : true,
-		})
+		// console.log(e)
+		// console.log(e.target.innerText)
+		if (
+			detailMap.current.size >= 5 &&
+			!detailMap.current.has(e.target.innerText)
+		) {
+			alert('직무는 최대 5개까지 선택 가능합니다.')
+		} else if (detailMap.current.has(e.target.innerText)) {
+			detailMap.current.delete(e.target.innerText)
+		} else {
+			detailMap.current.set(e.target.innerText, e.target.id)
+		}
 	}
 	return (
 		<div className='flex items-center relative'>
@@ -130,7 +135,7 @@ export default function JobGroup() {
 			<div className='flex items-center before:content-["|"] before:px-4 before:text-gray-300 before:text-2xl'>
 				<button
 					onClick={() =>
-						setdetaolState({
+						setdetailState({
 							value: detailState.value,
 							isSelect: !detailState.isSelect,
 						})
@@ -163,7 +168,18 @@ export default function JobGroup() {
 							/>
 							<hr />
 							<div className='py-2 pr-3 flex justify-end'>
-								<button className='rounded-lg bg-blue-600 text-white font-bold px-8 py-2'>
+								<button
+									className='rounded-lg bg-blue-600 text-white font-bold px-8 py-2'
+									onClick={() => {
+										setdetailState({
+											value: [...detailMap.current.keys()].join(', '),
+											isSelect: false,
+										})
+										const query = [...detailMap.current.values()]
+											.map((v) => createQueryString('selected', v))
+											.join('&')
+										router.push(pathname + '?' + query)
+									}}>
 									선택 완료하기
 								</button>
 							</div>
