@@ -31,13 +31,21 @@ const JobCategory = () => {
 	)
 }
 
-const DetailCategory = ({ index }: { index: number }) => {
+const DetailCategory = ({
+	index,
+	onClick,
+}: {
+	index: number
+	onClick: any
+}) => {
 	return (
 		<div className='px-4 mb-4'>
 			<p className='text-xs text-gray-600 mb-2'>
 				직무를 선택해주세요. (최대 5개 선택 가능)
 			</p>
-			<ul className='flex flex-wrap gap-2'>
+			<ul
+				className='flex flex-wrap gap-2'
+				onClick={onClick}>
 				{jobObj.data[index].detail?.map((job) => (
 					<li
 						className='text-xs hover:border hover:border-blue-200 border border-white rounded-full cursor-pointer bg-gray-100'
@@ -62,7 +70,7 @@ export default function JobGroup() {
 	})
 	const [detailState, setdetaolState] = useState({
 		isSelect: false,
-		value: '',
+		value: undefined,
 	})
 
 	const router = useRouter()
@@ -84,10 +92,11 @@ export default function JobGroup() {
 	}
 	const onClickDetail = (e: React.MouseEvent<HTMLAnchorElement>) => {
 		console.log(e)
+		console.log(detailState)
 
 		setdetaolState({
-			value: e.target.text,
-			isSelect: !detailState.isSelect,
+			value: e.target.text ? e.target.text : detailState.value,
+			isSelect: e.target.innerText === '선택 완료하기' ? false : true,
 		})
 	}
 	return (
@@ -134,7 +143,7 @@ export default function JobGroup() {
 					) : (
 						<>
 							<span className='text-2xl mr-4 leading-none'>
-								{detailState.value.length
+								{detailState.value
 									? detailState.value
 									: jobObj.data[jobState.index - 1].detail?.[0].title}
 							</span>
@@ -147,10 +156,11 @@ export default function JobGroup() {
 				</button>
 				{detailState.isSelect ? (
 					<>
-						<section
-							className='absolute w-full left-0 top-10 h-[46vh] bg-white overflow-auto overflow-y-hidden hover:overflow-y-auto hover:scrollbar-thin z-50 py-4 border rounded shadow-lg shadow-gray-400 max-w-[940px]'
-							onClick={onClickDetail}>
-							<DetailCategory index={jobState.index - 1} />
+						<section className='absolute w-full left-0 top-10 bg-white overflow-auto overflow-y-hidden hover:overflow-y-auto hover:scrollbar-thin z-50 py-4 border rounded shadow-lg shadow-gray-400 max-w-[940px]'>
+							<DetailCategory
+								index={jobState.index - 1}
+								onClick={onClickDetail}
+							/>
 							<hr />
 							<div className='py-2 pr-3 flex justify-end'>
 								<button className='rounded-lg bg-blue-600 text-white font-bold px-8 py-2'>
