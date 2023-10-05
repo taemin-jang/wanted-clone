@@ -96,6 +96,7 @@ export default function JobGroup() {
 			utilCreateQueryString(key, value, searchParams),
 		[searchParams],
 	)
+	const [toggle, setToggle] = useState({ job: false, jobDetail: false })
 
 	const onClickJob = (e: React.MouseEvent) => {
 		const event = e.target as HTMLDivElement
@@ -104,6 +105,7 @@ export default function JobGroup() {
 			isSelect: !jobState.isSelect,
 			index: 1,
 		})
+		setToggle({ job: !toggle.job, jobDetail: toggle.jobDetail })
 	}
 	const onClickDetail = (e: React.MouseEvent) => {
 		const event = e.target as HTMLUListElement
@@ -124,18 +126,23 @@ export default function JobGroup() {
 		<div className='flex items-center relative'>
 			<div className='flex items-center'>
 				<button
-					onClick={() =>
+					onClick={() => {
 						setJobState({
 							value: jobState.value,
 							isSelect: !jobState.isSelect,
 							index: jobState.index,
 						})
-					}>
+						setToggle({ job: !toggle.job, jobDetail: toggle.jobDetail })
+					}}>
 					<span className='text-2xl font-bold mr-4 leading-none'>
 						{jobState.value}
 					</span>
 					<span>
-						<KeyboardArrowDownIcon className='border rounded-full' />
+						<KeyboardArrowDownIcon
+							className={`border rounded-full ${
+								toggle.job ? 'toggle' : 'no-toggle'
+							}`}
+						/>
 					</span>
 				</button>
 				{jobState.isSelect ? (
@@ -150,12 +157,13 @@ export default function JobGroup() {
 			</div>
 			<div className='flex items-center before:content-["|"] before:px-4 before:text-gray-300 before:text-2xl'>
 				<button
-					onClick={() =>
+					onClick={() => {
 						setdetailState({
 							value: detailState.value,
 							isSelect: !detailState.isSelect,
 						})
-					}
+						setToggle({ job: toggle.job, jobDetail: !toggle.jobDetail })
+					}}
 					disabled={jobState.value === '전체'}>
 					{jobState.value === '전체' ? (
 						<span className='text-2xl mr-4 leading-none text-gray-400'>
@@ -170,7 +178,11 @@ export default function JobGroup() {
 							</span>
 
 							<span>
-								<KeyboardArrowDownIcon className='border rounded-full' />
+								<KeyboardArrowDownIcon
+									className={`border rounded-full ${
+										toggle.jobDetail ? 'toggle' : 'no-toggle'
+									}`}
+								/>
 							</span>
 						</>
 					)}
@@ -196,6 +208,7 @@ export default function JobGroup() {
 											.map((v) => createQueryString('selected', v))
 											.join('&')
 										router.push(pathname + '?' + query)
+										setToggle({ job: toggle.job, jobDetail: !toggle.jobDetail })
 									}}>
 									선택 완료하기
 								</button>
