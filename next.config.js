@@ -42,6 +42,10 @@ const nextConfig = {
 				protocol: 'https',
 				hostname: 'ssl.pstatic.net',
 			},
+			{
+				protocol: 'https',
+				hostname: 'graph.facebook.com',
+			},
 		],
 	},
 	swcMinify: true,
