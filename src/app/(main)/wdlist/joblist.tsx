@@ -17,8 +17,7 @@ export default async function JobList({
 	}
 
 	const data: JobAPI = await getFetch(`/jobs${query}`, 'no-store')
-	const bookmark = await getFetch('/bookmark')
-
+	const bookmark = await getFetch('/bookmark', 'no-store')
 	return (
 		<JobCard
 			jobList={data}
