@@ -1,9 +1,17 @@
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined'
-import BookmarkBorderSharpIcon from '@mui/icons-material/BookmarkBorderSharp'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import Image from 'next/image'
 import type { Detail } from '@/types/wanted-api'
-export default function JobPorcess({ jobDetail }: { jobDetail: Detail }) {
+import BookmarkBtn from '@/app/(main)/wd/[id]/bookmarkBtn'
+export default async function JobPorcess({ jobDetail }: { jobDetail: Detail }) {
+	const data = await fetch(
+		`http://localhost:3000/api/bookmark/${jobDetail.job.id}`,
+		{
+			cache: 'no-store',
+		},
+	)
+	const res = await data.json()
+	console.log(res)
 	return (
 		<div className='sticky-layout w-[21.25rem] h-full'>
 			<div className=' px-4 py-6  border rounded font-semibold'>
@@ -28,11 +36,11 @@ export default function JobPorcess({ jobDetail }: { jobDetail: Detail }) {
 					</div>
 				</div>
 				<div className='mt-8'>
-					<div className='flex justify-center border border-blue-500 rounded-full text-blue-500 py-3 font-semibold'>
-						<BookmarkBorderSharpIcon color='info' />
-						<p>북마크하기</p>
-					</div>
-					<div className='flex justify-center bg-blue-600 border rounded-full py-3 mt-2 text-white font-semibold'>
+					<BookmarkBtn
+						job={jobDetail.job}
+						isBookmark={res}
+					/>
+					<div className='flex justify-center bg-blue-600 border rounded-full py-3 mt-2 text-white font-semibold cursor-pointer'>
 						지원하기
 					</div>
 				</div>

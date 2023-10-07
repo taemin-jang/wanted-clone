@@ -8,12 +8,14 @@ import Loading from '@/app/(main)/wdlist/loading'
 
 import Map from '@/app/(main)/wd/[id]/map'
 import JobPorcess from '@/app/(main)/wd/[id]/jobprocess'
+import getFetch from '@/utils/getFetch'
 
-export default function Content({ api }: { api: API }) {
+export default async function Content({ api }: { api: API }) {
 	const { newJob, jobDetail } = api
 	const JobCard = dynamic(() => import('@/app/(main)/wdlist/jobcard'), {
 		loading: () => <Loading />,
 	})
+	const bookmark = await getFetch('/bookmark', 'no-store')
 
 	return (
 		<>
@@ -142,7 +144,10 @@ export default function Content({ api }: { api: API }) {
 				<p className='text-gray-700 font-bold text-lg mb-4'>
 					이 포지션을 찾고 계셨나요?
 				</p>
-				<JobCard jobList={newJob} />
+				<JobCard
+					jobList={newJob}
+					bookmark={bookmark}
+				/>
 			</div>
 		</>
 	)

@@ -1,6 +1,6 @@
 export default async function getFetch(
 	path: string,
-	cacheOption: RequestCache | undefined,
+	cacheOption?: RequestCache,
 ) {
 	const response = await fetch(`${process.env.PRODUCT_API_URL + path}`, {
 		cache: cacheOption,

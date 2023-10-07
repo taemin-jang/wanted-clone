@@ -44,4 +44,15 @@
 		background: rgb(156, 163, 175);
 		border-radius: 10px;
 	}
+	.active {
+		@apply border-2 border-blue-500 bg-white text-blue-500 font-bold;
+	}
+
+	.toggle {
+		@apply rotate-180 transition;
+	}
+
+	.no-toggle {
+		@apply -rotate-0 transition;
+	}
 }
