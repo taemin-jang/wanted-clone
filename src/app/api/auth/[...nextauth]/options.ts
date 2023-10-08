@@ -86,6 +86,6 @@ export const options: NextAuthOptions = {
 	},
 	pages: {
 		signIn: '/signin',
-		signOut: '/',
+		signOut: '/wdlist',
 	},
 }
