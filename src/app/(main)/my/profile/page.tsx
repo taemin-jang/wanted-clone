@@ -21,7 +21,7 @@ export default function Profile() {
 						className='text-lg font-bold text-gray-400 cursor-pointer'
 						onClick={() =>
 							signOut({
-								callbackUrl: '/',
+								callbackUrl: '/wdlist',
 							})
 						}>
 						로그아웃

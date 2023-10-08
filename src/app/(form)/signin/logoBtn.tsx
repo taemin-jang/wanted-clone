@@ -23,7 +23,7 @@ export default function LogoBtn({
 			onClick={() =>
 				signIn(name, {
 					redirect: true,
-					callbackUrl: '/',
+					callbackUrl: '/wdlist',
 				})
 			}>
 			<div

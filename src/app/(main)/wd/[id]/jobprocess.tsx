@@ -11,7 +11,6 @@ export default async function JobPorcess({ jobDetail }: { jobDetail: Detail }) {
 		},
 	)
 	const res = await data.json()
-	console.log(res)
 	return (
 		<div className='sticky-layout w-[21.25rem] h-full'>
 			<div className=' px-4 py-6  border rounded font-semibold'>
