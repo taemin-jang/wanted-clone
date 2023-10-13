@@ -1,6 +1,14 @@
 import Link from 'next/link'
+import initTranslations from '@/app/i18n'
 
-export default function Container({ children }: { children: React.ReactNode }) {
+export default async function Container({
+	children,
+	locale,
+}: {
+	children: React.ReactNode
+	locale: any
+}) {
+	const { t } = await initTranslations(locale, ['signin'])
 	return (
 		<main className='flex h-screen justify-center items-center p-6'>
 			<div className='border-2 border-gray-200 rounded-md form-layout bg-white  w-[400px]'>
@@ -12,14 +20,10 @@ export default function Container({ children }: { children: React.ReactNode }) {
 							wanted
 						</Link>
 						<h2 className='text-center font-semibold text-2xl my-4'>
-							하나의 계정으로
-							<br />
-							더욱 편리하게
+							{t('title')}
 						</h2>
 						<p className='text-gray-500 text-center text-sm mb-8'>
-							원티드가 제공하는 서비스를
-							<br />
-							하나의 계정으로 모두 이용할 수 있습니다.
+							{t('subTitle')}
 						</p>
 					</div>
 					{children}

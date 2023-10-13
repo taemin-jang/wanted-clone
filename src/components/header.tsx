@@ -71,7 +71,7 @@ export default function Header() {
 									</Link>
 								</span>
 							) : (
-								<Link href={'/signin'}>회원가입/로그인</Link>
+								<Link href={'/ko/signin'}>회원가입/로그인</Link>
 							)}
 						</li>
 						<li className='mx-4 text-xs text-gray-300'>|</li>
