@@ -3,9 +3,9 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
+		"dev": "i18nexus pull && next dev",
+		"build": "i18nexus pull && next build",
+		"start": "i18nexus pull && next start",
 		"lint": "next lint"
 	},
 	"dependencies": {
@@ -16,13 +16,17 @@
 		"@next-auth/firebase-adapter": "^2.0.1",
 		"@reduxjs/toolkit": "^1.9.5",
 		"firebase": "^10.3.1",
-		"next": "13.4.19",
+		"i18next": "^23.5.1",
+		"i18next-resources-to-backend": "^1.1.4",
+		"next": "13.5.4",
 		"next-auth": "^4.23.1",
+		"next-i18n-router": "^4.1.2",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-hook-form": "^7.45.4",
 		"react-redux": "^8.1.2",
-		"tailwindcss": "3.3.3"
+		"tailwindcss": "3.3.3",
+		"react-i18next": "^13.2.2"
 	},
 	"devDependencies": {
 		"@svgr/webpack": "^8.1.0",
@@ -33,7 +37,8 @@
 		"eslint": "8.48.0",
 		"eslint-config-next": "13.4.19",
 		"firebase-admin": "^11.10.1",
-		"postcss": "8.4.29",
+		"i18nexus-cli": "^3.3.0",
+		"postcss": "^8.4.31",
 		"typescript": "5.2.2"
 	}
 }
