@@ -15,7 +15,8 @@ import { AppDispatch } from '@/redux/store'
 import { logIn, logOut } from '@/redux/slice/auth-slice'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
-import LogoBtn from '@/app/(form)/signin/logoBtn'
+import LogoBtn from '@/app/(form)/[locale]/signin/logoBtn'
+import { useTranslation } from 'react-i18next'
 interface ErrorState {
 	isError: boolean
 	message: string
@@ -71,7 +72,11 @@ const TextField = ({ inputDatas }: { inputDatas: InputData[] }) => {
 	)
 }
 
-export default function Signin() {
+export default function Signin({
+	params: { locale },
+}: {
+	params: { locale: string }
+}) {
 	const {
 		register,
 		handleSubmit,
@@ -83,26 +88,27 @@ export default function Signin() {
 	const modalContent = useRef('')
 	const router = useRouter()
 	let error = useRef({ isError: false, message: '', type: '' })
-	const [selected, setSelected] = useState({ value: 'korean', icon: 'KR' })
-
+	const selected = useRef({ value: '', icon: '' })
+	switch (locale) {
+		case 'ko':
+			selected.current.icon = 'KR'
+			break
+		case 'en':
+			selected.current.icon = 'WW'
+			break
+		case 'ja':
+			selected.current.icon = 'JP'
+			break
+	}
+	const { t } = useTranslation()
 	const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
-		switch (e.target.value) {
-			case 'korean':
-				setSelected({ value: 'korean', icon: 'KR' })
-				break
-			case 'english':
-				setSelected({ value: 'english', icon: 'WW' })
-				break
-			case 'japanese':
-				setSelected({ value: 'japanese', icon: 'JP' })
-				break
-		}
+		router.push(`/${e.target.value}/signin`)
 	}
 	const inputDatas: InputData[] = [
 		{
 			type: 'id',
-			text: '아이디',
-			placeholder: '아이디를 입력해주세요.',
+			text: t('id'),
+			placeholder: t('idPlaceholder'),
 			error: error.current,
 			register,
 			formErrors: errors,
@@ -110,8 +116,8 @@ export default function Signin() {
 		},
 		{
 			type: 'password',
-			text: '비밀번호',
-			placeholder: '비밀번호를 입력해주세요.',
+			text: t('pw'),
+			placeholder: t('pwPlaceholder'),
 			error: error.current,
 			register,
 			formErrors: errors,
@@ -142,7 +148,7 @@ export default function Signin() {
 			<form onSubmit={handleSubmit(handleSubmitForm)}>
 				<TextField inputDatas={inputDatas} />
 				<button className='bg-blue-500 rounded-3xl text-white font-bold w-full py-2 mt-6 mb-2'>
-					로그인 진행
+					{t('loginBtn')}
 				</button>
 				<p>{error.current.isError}</p>
 				<ModalComponent
@@ -150,7 +156,9 @@ export default function Signin() {
 					modalContent={modalContent.current}></ModalComponent>
 			</form>
 			<div className='flex flex-col w-full gap-3 my-2'>
-				<p className='text-center text-xs text-gray-400 font-semibold'>또는</p>
+				<p className='text-center text-xs text-gray-400 font-semibold'>
+					{t('or')}
+				</p>
 				<div className='flex justify-evenly text-xs text-gray-400 font-semibold'>
 					<LogoBtn
 						name='naver'
@@ -160,31 +168,31 @@ export default function Signin() {
 					<LogoBtn name='kakao' />
 				</div>
 				<p className='text-center text-sm text-gray-500 font-semibold my-2'>
-					계정을 잊으셨나요? {'>'}
+					{t('forget')} {'>'}
 				</p>
 			</div>
 			<hr />
 			<div className='flex flex-col justify-center items-center gap-3 text-gray-400 text-xs my-4'>
 				<span className='flex gap-3'>
-					<p>이용약관</p>
-					<p className='font-extrabold text-gray-600'>개인정보처리방침</p>
+					<p>{t('use')}</p>
+					<p className='font-extrabold text-gray-600'>{t('policy')}</p>
 				</span>
 				<span>© Wantedlab, Inc.</span>
 				<div className='flex gap-1 font-bold text-gray-600 border rounded px-3 py-2 mt-2'>
 					<Image
-						src={`https://static.wanted.co.kr/images/wantedoneid/ico_${selected.icon}.svg`}
-						alt={selected.value}
+						src={`https://static.wanted.co.kr/images/wantedoneid/ico_${selected.current.icon}.svg`}
+						alt={selected.current.value}
 						width={23}
 						height={16}
 						className='border'
 					/>
 					<select
 						id='language'
-						value={selected.value}
+						value={locale}
 						onChange={handleSelect}>
-						<option value='korean'>한국어</option>
-						<option value='english'>English</option>
-						<option value='japanese'>日本語</option>
+						<option value='ko'>한국어</option>
+						<option value='en'>English</option>
+						<option value='ja'>日本語</option>
 					</select>
 				</div>
 			</div>
