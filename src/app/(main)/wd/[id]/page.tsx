@@ -1,3 +1,4 @@
+
 import Loading from '@/app/(main)/wd/[id]/loading'
 import dynamic from 'next/dynamic'
 

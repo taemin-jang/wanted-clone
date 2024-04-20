@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import JobCard from '@/app/(main)/wdlist/jobcard'
 
 export default async function BookMarks() {

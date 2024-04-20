@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import ActiveRecruiting from '@/app/(main)/wdlist/active-recruiting'
 import BookMark from '@/app/(main)/wdlist/bookmark'
 import JobList from '@/app/(main)/wdlist/joblist'
