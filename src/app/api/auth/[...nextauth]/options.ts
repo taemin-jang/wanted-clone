@@ -8,6 +8,8 @@ import { cert } from 'firebase-admin/app'
 import { getUserInfoFromKakao } from '@/utils/getUserInfo'
 
 export const options: NextAuthOptions = {
+	secret: process.env.NEXT_PUBLIC_NEXTAUTH_SECRET,
+
 	adapter: FirestoreAdapter({
 		credential: cert({
 			projectId: process.env.FIREBASE_PROJECT_ID,
