@@ -3,9 +3,12 @@ export const dynamic = 'force-dynamic'
 import JobCard from '@/app/(main)/wdlist/jobcard'
 
 export default async function BookMarks() {
-	const res = await fetch(process.env.PRODUCT_API_URL + '/bookmark', {
-		cache: 'no-store',
-	})
+	const res = await fetch(
+		process.env.NEXT_PUBLIC_PRODUCT_API_URL + '/bookmark',
+		{
+			cache: 'no-store',
+		},
+	)
 	const bookmark = await res.json()
 	return (
 		<div className='bg-gray-50 w-full h-full absolute'>

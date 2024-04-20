@@ -22,16 +22,16 @@ export const options: NextAuthOptions = {
 	}),
 	providers: [
 		KakaoProvider({
-			clientId: process.env.KAKAO_API_KEY as string,
-			clientSecret: process.env.KAKAO_SECRET_KEY as string,
+			clientId: process.env.NEXT_PUBLIC_KAKAO_API_KEY as string,
+			clientSecret: process.env.NEXT_PUBLIC_KAKAO_SECRET_KEY as string,
 		}),
 		GoogleProvider({
-			clientId: process.env.GOOGLE_API_KEY as string,
-			clientSecret: process.env.GOOGLE_SECRET_KEY as string,
+			clientId: process.env.NEXT_PUBLIC_GOOGLE_API_KEY as string,
+			clientSecret: process.env.NEXT_PUBLIC_GOOGLE_SECRET_KEY as string,
 		}),
 		NaverProvider({
-			clientId: process.env.NAVER_API_KEY as string,
-			clientSecret: process.env.NAVER_SECRET_KEY as string,
+			clientId: process.env.NEXT_PUBLIC_NAVER_API_KEY as string,
+			clientSecret: process.env.NEXT_PUBLIC_NAVER_SECRET_KEY as string,
 		}),
 		CredentialsProvider({
 			name: 'Credentials',
@@ -48,13 +48,16 @@ export const options: NextAuthOptions = {
 				},
 			},
 			async authorize(credentials) {
-				const res = await fetch(`${process.env.PRODUCT_API_URL}/signin`, {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
+				const res = await fetch(
+					`${process.env.NEXT_PUBLIC_PRODUCT_API_URL}/signin`,
+					{
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json',
+						},
+						body: JSON.stringify({ credentials }),
 					},
-					body: JSON.stringify({ credentials }),
-				})
+				)
 				const user = await res.json()
 
 				if (!user) return null
