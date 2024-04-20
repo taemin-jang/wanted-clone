@@ -12,8 +12,8 @@ const Card = ({
 	setIsRootSelect,
 }: {
 	job: Job
-	bookmark: { idArr: string[]; data: Job[] }
-	setIsRootSelect: (value: boolean) => void
+	bookmark?: { idArr: string[]; data: Job[] }
+	setIsRootSelect: (value: boolean | undefined) => void
 }) => {
 	const router = useRouter()
 	const [isSelect, setIsSelect] = useState(

@@ -1,17 +1,17 @@
 'use client'
-import { Tag, onClick } from '@/types/job-filter'
+import { Data, Tag, onClick } from '@/types/job-filter'
 
 export default function Keyword({
 	datas,
 	onClick,
 }: {
-	datas: Tag[]
+	datas: Tag[] | Data[]
 	onClick?: onClick
 }) {
 	return (
 		<>
 			{datas.map((data) =>
-				data.id ? (
+				'id' in data ? (
 					<span
 						key={data.id}
 						className='rounded-3xl bg-gray-100 text-xs px-3 py-2 mr-2'>

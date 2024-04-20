@@ -9,7 +9,7 @@ const JobCard = ({
 	bookmark,
 }: {
 	jobList: JobAPI
-	bookmark: { idArr: string[]; data: Job[] }
+	bookmark?: { idArr: string[]; data: Job[] }
 }) => {
 	const jobs = jobList.data
 	const [bookmarkState, setBookmark] = useState(bookmark)
@@ -23,8 +23,8 @@ const JobCard = ({
 		}
 		getBookmark()
 	}, [isRootSelect])
-	const changeRootSelect = (value: boolean) => {
-		setIsRootSelect(value)
+	const changeRootSelect = (value: boolean | undefined) => {
+		if (value) setIsRootSelect(value)
 	}
 	return (
 		<>
